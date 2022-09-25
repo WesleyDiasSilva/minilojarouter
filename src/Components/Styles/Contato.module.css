@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  height: calc(100vh - 15rem);
 }
 
 .dados{

@@ -7,9 +7,9 @@ import "./App.css";
 import Contato from "./Components/Contato";
 import Produto from "./Components/Produto";
 
-const App = () => {
+function App(){
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Header />
         <div className="content">

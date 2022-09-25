@@ -3,8 +3,8 @@ import styles from './Styles/Footer.module.css'
 
 function Footer() {
   return (
-    <div>
-      <h1>Footer</h1>
+    <div className={styles.footer}>
+      <p>Alguns direitos reservados - Wesley Dias</p>
     </div>
   )
 }
