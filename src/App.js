@@ -1,11 +1,26 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Produtos from "./Components/Produtos";
+import "./App.css";
+import Contato from "./Components/Contato";
 
-function App() {
+const App = () => {
   return (
     <div>
-      Olá
+      <BrowserRouter>
+        <Header />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Produtos />}></Route>
+            <Route path="contato" element={<Contato />}></Route>
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
